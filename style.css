@@ -1,0 +1,57 @@
+body {
+			background-image: url('https://t4.ftcdn.net/jpg/02/81/25/31/360_F_281253189_A1GYRtKi8dKiZYip4yerjW8qTWG7KdgL.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			width: 100%;
+			height: 100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      margin:0px;
+      padding:0px;
+		}
+
+    .turkey {
+			font-size: 50px;
+			
+			backface-visibility: hidden;
+		
+			position: absolute;
+		}
+    .turkey:first-child{
+      animation: turkey 19.2s infinite linear;
+    }
+    .turkey:nth-child(2){
+      animation: turkey 5.2s infinite linear;
+    }
+    .turkey:nth-child(3){
+      animation: turkey 12.2s infinite linear;
+    }
+
+		@keyframes turkey {
+			0% {
+				opacity: 1;
+				transform: translateX(0px) translateY(0px)rotate(0deg) scale(1, 1);
+				animation-timing-function: ease-out;
+			}
+      25% {
+				opacity: 1;
+				transform: translateX(50px) translateY(0px)rotate(0deg) scale(1, 1);
+				animation-timing-function: ease-out;
+			}
+      50% {
+				opacity: 1;
+				transform: translateX(70px) translateY(25px)rotate(0deg) scale(1, 1);
+				animation-timing-function: ease-out;
+			}
+      80% {
+				opacity: 1;
+				transform: translateX(20px) translateY(0px)rotate(0deg) scale(1, 1);
+				animation-timing-function: ease-out;
+			}
+      100% {
+				opacity: 1;
+				transform: translateX(-35px) translateY(0px)rotate(0deg) scale(1, 1);
+				animation-timing-function: ease-out;
+			}
+    }
